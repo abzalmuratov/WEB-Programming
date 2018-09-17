@@ -1,0 +1,13 @@
+table {
+    margin-bottom: 20px; 
+}
+th {
+    text-align: left;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+.texts {
+    padding: 0 10px;
+}
