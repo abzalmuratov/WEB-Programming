@@ -1,0 +1,61 @@
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+nav a{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    background-color: lightgray;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    background-color: red;
+    color: white;
+} 
+.active {
+    color: white;
+    background-color: red;
+}
+.logo_part{
+    display: flex; 
+
+}
+.search {
+    margin-left: 75px; 
+    align-self: center;
+}
+.cards {
+    text-align: center;
+}
+.card {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 30px;
+    display: inline-block;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.card a, .card img, .card div {
+    display: block;
+}
+.card .price {
+    font-weight: bold;
+}
+.card a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: block;
+    height: 30px;
+    padding-top: 15px;
+    position: absolute;
+    bottom:0px;
+    width: 600px;
+}
