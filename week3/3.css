@@ -1,6 +1,7 @@
 .container {
     width: 600px;
     margin: 0 auto;
+    background-color: white;
 }
 nav a{
     display: inline-block;
@@ -20,7 +21,6 @@ nav a:hover {
 }
 .logo_part{
     display: flex; 
-
 }
 .search {
     margin-left: 75px; 
@@ -28,6 +28,7 @@ nav a:hover {
 }
 .cards {
     text-align: center;
+    margin-left: 30px;
 }
 .card {
     text-align: center;
@@ -55,7 +56,11 @@ footer {
     display: block;
     height: 30px;
     padding-top: 15px;
-    position: absolute;
-    bottom:0px;
+    position: fixed;
+    bottom: 0px;
     width: 600px;
+}
+body{
+    display:flex;
+    background-image: url(http://backgroundlabs.com/wp-content/uploads/2013/04/subtle-mosaic-pattern.png)
 }

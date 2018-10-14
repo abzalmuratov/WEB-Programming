@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* Write your code here */
+            .card {
+                position: relative;
+                flex-direction: row;
+                margin-bottom: 5px;
+                display: flex;
+                border: 2px solid aqua;
+            }
+            img {
+                padding: 5px;
+            }
+            body{
+                font-size: 15px;
+            }
+        
+        @media(max-width: 400px){
+            img{
+                display: none;
+            }
+            .info{
+                position: static;
+            }
+            .info a{
+                font-size: 20px;
+            }
+            .price{
+                position: absolute;
+                font-weight: 800;
+                font-size: 20px;
+                top: 0;
+                right: 2px;
+            }
+            .desc{
+                display: none;
+            }
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="card first">
+            <img src="http://via.placeholder.com/100x100"/>
+            <section class="info">
+            <a href="#">Mercedes C100</a>
+            <div class="desc">В хорошем состоянии</div>
+            <div class="price">10.000$</div>
+            </section>
+        </div>
+        <div class="card">
+            <img src="http://via.placeholder.com/100x100"/>
+            <section class="info">
+            <a href="#">BMW X5</a>
+            <div class="desc">В хорошем состоянии</div>
+            <div class="price">10.000$</div>
+            </section>
+        </div>
+        <div class="card">
+            <img src="http://via.placeholder.com/100x100"/>
+            <section class="info">
+            <a href="#">Audi A8</a>
+            <div class="desc">В хорошем состоянии</div>
+            <div class="price">10.000$</div>
+            </section>
+        </div>
+    </body>
+</html>
