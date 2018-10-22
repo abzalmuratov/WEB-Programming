@@ -9,7 +9,7 @@
 		document.getElementById("name").classList.add("error")                
 		bool='false'
 	}
-	else document.getElementById("name").classList.remove("error")
+	else document.getElementById("name").style.textDecoration
 	
 	if (!Surname) {
 		document.getElementById("surname").classList.add("error")
