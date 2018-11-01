@@ -1,0 +1,25 @@
+<!doctype html>
+
+<body>
+    <p><img src = "https://banner2.kisspng.com/20180202/kdw/kisspng-green-balloon-green-balloon-5a74cb025fb8a0.8207243515176035863921.jpg" id = "b" style = "position: relative; width: 150px"></p>
+    <p><img src = "https://images.vexels.com/media/users/3/131422/isolated/preview/98e0d49a3f1b1cbac9ce21c5d70ce8a3-man-walking-silhouette-14-by-vexels.png"id = "a" style = "position: relative"></p>
+
+
+    <script>
+        var baloon = document.getElementById("b");
+        var man = document.getElementById("a");
+
+        var angle = 0, lastTime = null;
+        function animate(time) {
+            if(lastTime != null) angle += (time - lastTime) * 0.002;
+            lastTime = time;
+            
+            man.style.top = (Math.sin(angle) * 20 - 20) + "px";
+            man.style.left = (Math.cos(angle) * 80 - 65) + "px";
+            baloon.style.top = (Math.sin(angle) * 20 + 200) + "px";
+            baloon.style.left = (Math.cos(angle) * 80 + 200) + "px";
+            requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+    </script>
+</body>
