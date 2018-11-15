@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="second.js" defer></script>
+	</head>
+	<body>
+		<form action="second.php" method="POST">
+			<table border="1" cellspacing="0">
+				<tr>
+					<td>
+						<div>Maker:</div>
+					</td>
+					<td>
+						<select id="cars" name="maker">
+							<option>Select maker of car</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>Year:</div>
+					</td>
+					<td>
+						<select id="years" name="year">
+							<option>Select year of car</option>		
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Model:</td>
+					<td>
+						<input type="text" name="model">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>Engine:</div>
+					</td>
+					<td>
+						<input type="radio" name="engine" value="petroleum">Petroleum
+						<input type="radio" name="engine" value="gas">Gas
+						<input type="radio" name="engine" value="diesel">Diesel
+					</td>
+				</tr>
+				<tr>
+					<td><div>Price:</div></td>
+					<td><input type="text" name="price"></td>
+				</tr>
+				<tr>
+					<td>
+						<div>Additional:</div>
+					</td>
+					<td>
+						<input type="checkbox" name="a1">tax payed<br>
+						<input type="checkbox" name="a2">technical check passed<br>
+						<input type="checkbox" name="a3">does not require investemt<br>
+					</td>
+				</tr>
+			</table>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</body>
+</html>
